@@ -1,0 +1,12 @@
+some-secret: ${sm://SOME_SECRET}
+
+spring:
+  cloud:
+    gcp:
+      secretmanager:
+        enabled: true
+        project-id: ${PROJECT_ID}
+
+logging:
+  level:
+    com.google: DEBUG

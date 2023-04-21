@@ -1,9 +1,0 @@
-some-secret: "Hello World! (local)"
-
-spring:
-  cloud:
-    gcp:
-      core:
-        enabled: false
-      secretmanager:
-        enabled: false

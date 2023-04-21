@@ -11,3 +11,4 @@ spring:
 logging:
   level:
     com.google: DEBUG
+    io.grpc: DEBUG

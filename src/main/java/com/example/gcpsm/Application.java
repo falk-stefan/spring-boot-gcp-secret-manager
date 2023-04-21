@@ -1,4 +1,4 @@
-package com.example.googlesecretmanager;
+package com.example.gcpsm;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,15 +10,15 @@ import org.springframework.context.event.ApplicationContextEvent;
 import org.springframework.lang.NonNull;
 
 @SpringBootApplication
-public class GoogleSecretManagerApplication implements ApplicationListener<ApplicationContextEvent> {
+public class Application implements ApplicationListener<ApplicationContextEvent> {
 
-    private final static Logger LOGGER = LogManager.getLogger(GoogleSecretManagerApplication.class);
+    private final static Logger LOGGER = LogManager.getLogger(Application.class);
 
     @Value("${some-secret}")
     private String someSecret;
 
     public static void main(String[] args) {
-        SpringApplication.run(GoogleSecretManagerApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
     @Override

@@ -11,7 +11,7 @@ To deploy the project, run `deploy.sh` which
 3. Deploys the service
 
 ```bash
-$ ./deploy.s <project-id>
+$ ./deploy.sh <project-id>
 ```
 
 Visit https://secret-manager-xxxxxxxx-ew.a.run.app/ or check service logs for the output:

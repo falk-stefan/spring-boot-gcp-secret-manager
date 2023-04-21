@@ -1,0 +1,17 @@
+[1m[32m✔[39;0m[1m Service secret-manager in region europe-west1[m
+ 
+URL:     https://secret-manager-xxxxxxxxxxx-ew.a.run.app
+Ingress: all
+Traffic:
+  100% [1mLATEST (currently secret-manager-00004-von)[m
+ 
+Last updated on 2023-04-21T08:14:46.515632Z by xxxxxxxxxxxx@gmail.com:
+  [1mRevision secret-manager-00004-von[m
+  Image:           gcr.io/xxxxxxxxxxx/secret-manager:0.0.0
+  Port:            8080
+  Memory:          512Mi
+  CPU:             1000m
+  Service account: xxxxxxxxxxx-compute@developer.gserviceaccount.com
+  Concurrency:     80
+  Max Instances:   100
+  Timeout:         300s

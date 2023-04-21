@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <title>Google Secret Manager Example</title>
+    <script>
+        function loadSecret() {
+            const xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "/secret", false);
+            xmlHttp.send(null);
+            console.log(xmlHttp.responseText)
+            document.getElementById("secret").innerHTML = xmlHttp.responseText;
+        }
+        window.onload = loadSecret
+    </script>
+</head>
+<body>
+<h1>Google Secret Manager Example</h1>
+<p>Secret message: "<span id="secret"></span>"</p>
+</body>
+</html>
